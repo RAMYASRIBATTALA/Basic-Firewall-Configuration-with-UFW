@@ -1,6 +1,26 @@
 
 Task 2: Basic Firewall Configuration with UFW
 
+# Update system
+sudo apt update
+
+# Install UFW
+sudo apt install -y ufw
+
+# Allow SSH
+sudo ufw allow ssh
+
+# Deny HTTP
+sudo ufw deny http
+
+# Enable firewall
+sudo ufw --force enable
+
+# Show status
+sudo ufw status verbose
+
+Sample examples with outputs
+
 1.sudo ufw allow ssh
 
 Output:-
